@@ -6,6 +6,7 @@ public class User {
     public int i = 0;
     private Block myBlock = new Block(i);
     int a;
+    private ArrayList <Block> blocks = new ArrayList<>();
     private double score = 0.00;
 
     public Bazaar myBazaar = new Bazaar(a);

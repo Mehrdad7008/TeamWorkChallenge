@@ -1,9 +1,17 @@
 package twModel;
+
+import java.util.ArrayList;
+
 public class Unit {
 	
-	public Person[] person = new Person[1000000];
 	private float point;
 	private int b=2;
+	private ArrayList <Person> people = new ArrayList<>();
+	{
+
+	}
+	for()
+
 	
 	public float unitPoint() {
 		return b + personPoints();

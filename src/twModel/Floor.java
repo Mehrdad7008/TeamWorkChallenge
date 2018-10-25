@@ -1,8 +1,18 @@
+<<<<<<< Updated upstream
 package twModel;
+=======
+import twModel.Unit;
+
+import java.util.ArrayList;
+
+>>>>>>> Stashed changes
 public class Floor {
-	private Unit[] unit = new Unit[100000];
+	private ArrayList <Unit> units= new ArrayList<>();
 	private int point;
 	private int c=3;
+	{
+
+	}
 	
 	public float floorPoint() {
 		return c + unitPoints() + 2 * personPoints();

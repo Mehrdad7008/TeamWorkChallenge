@@ -1,14 +1,14 @@
 package twModel;
 
 public class Block {
-    protected int blockId = 0;
+    protected int blockId = 0 ;
     protected int level = 1;
     protected boolean validArmy;
     protected int nonWorker;
     protected int worker;
     protected int[] blockCreate = new int[15];
     private int capacity = 5;
-    private int[] capacityOfblocks = new int[15];
+    private int[] capacityOfblocks = new int[15] ;
     private int[] levelOfblocks = new int[15];
     private Home[] homes = new Home[20];
 
@@ -55,51 +55,53 @@ public class Block {
     public int getWorker() {
         return worker;
     }
-
-    public void add(int constant) {
-        int i;
-        for (i = 0; i < 15; i++) {
-            if (blockCreate[i] == 0)
+    public void add()
+    {
+        int i ;
+        for ( i = 0 ; i<15 ; i++)
+        {
+            if (blockCreate[i]==0)
                 break;
         }
-        blockCreate[i] = 1;
+        blockCreate[i] = 1 ;
         capacityOfblocks[i] = 5;
-        setBlockId(blockId + constant);
-//        mojodi-=1000;
+        setBlockId(blockId+1);
+        mojodi-=1000;
     }
-
-    public void remove(int blockId) {
-        blockCreate[blockId - 1] = 0;
-//        mojodi+=500;
+    public void remove(int blockId)
+    {
+        blockCreate[blockId-1] = 0;
+        mojodi+=500;
 
     }
+    public void upgrade(int blockId)
+    {
 
-    public void upgrade(int blockId) {
-
-        capacityOfblocks[blockId] += 5;
+        capacityOfblocks[blockId]+=5;
         levelOfblocks[blockId]++;
-//        mojodi-=math.abs(500,levelOfblocks[blockId])
+        mojodi-=math.abs(500,levelOfblocks[blockId])
 
     }
-
     //    public int cost()
 //    {
 //
 //    }
-    public void attack() {
+    public void attack()
+    {
 
 
     }
 
-    public void loot() {
+    public void loot()
+    {
 
     }
-
-    public void score() {
+    public void score()
+    {
 
     }
-
-    public void grill() {
+    public void grill()
+    {
 
     }
 }

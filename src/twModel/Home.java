@@ -1,10 +1,24 @@
+<<<<<<< Updated upstream
 
 public class Home extends Block {
 	private Floor[] floor = new Floor[100000];
+=======
+package twModel;
+
+import java.util.ArrayList;
+
+public class Home extends Block {
+
+
+>>>>>>> Stashed changes
 	private int point;
 	private float e=10;
 	private int homeId = 0 ;
 	private int cost = 3000 ;
+<<<<<<< Updated upstream
+=======
+		private Ar
+>>>>>>> Stashed changes
 	private int[] home = new int[15] ;
 	protected int[] homeCreate = new int[15];
     
@@ -56,9 +70,15 @@ public class Home extends Block {
 	    		if (homeCreate[i]==0)
 	                break;
 	        }
+<<<<<<< Updated upstream
 	    homeCreate[i] = 1 ;
 	    setHomeId(homeId+1);
 	    return homeId;
+=======
+	        homeCreate[i] = 1 ;
+	        setHomeId(homeId+1);
+
+>>>>>>> Stashed changes
 	}
 	public void upgrade() {
 		
