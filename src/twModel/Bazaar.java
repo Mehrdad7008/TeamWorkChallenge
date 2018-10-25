@@ -1,4 +1,6 @@
-public class Bazaar {
+import twModel.Block;
+
+public class Bazaar extends Block {
     private int bazaarId ;
     Person[] person;
    private int population ;
