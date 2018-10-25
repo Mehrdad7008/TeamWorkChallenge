@@ -10,7 +10,7 @@ public class Person {
         return a * satisficationDeveloper();
     }
     public float satisficationDeveloper() {
-        this.satisfication *= ;
+        this.satisfication *= 1;
         return this.satisfication;
     }
     public String job() {
