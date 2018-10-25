@@ -34,8 +34,12 @@ public class Bazaar extends Block {
       for (i = 0 ; i<20 ; i++)
       {
             if (createBazar[i]==0)
-                createBazar[i] = 1;
+                break;
       }
+       blockCreate[i] = 1 ;
+       //capacityOfblocks[i] = 5;
+       setBlockId(blockId+1);
+       //mojodi-=1000;
    }
    public void remove (int bazaarId)
    {
