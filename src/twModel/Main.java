@@ -80,4 +80,5 @@ public class Main {
             input[counter]=read.next();
         }
     }
+
 }

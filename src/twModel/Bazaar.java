@@ -7,6 +7,7 @@ public class Bazaar extends Block {
    private int bazarId;
    private int bazaarLvl;
    private int[] createBazar = new int[20];
+   private Costs costs = new Costs();
 
     public Bazaar(int blockId) {
         super(blockId);
@@ -48,6 +49,8 @@ public class Bazaar extends Block {
    }
    public void upgrade()
    {
+        numberOfworker+=20;
+       costs.setFirstCosts((getLevel()+1)*5000);
 
    }
    public void cost()
