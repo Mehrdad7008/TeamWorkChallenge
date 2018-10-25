@@ -1,7 +1,8 @@
 package twModel;
 
 public class Defense {
-    float defenseLevel;
+  private   float defenseLevel;
+  private int numberOfDefense = 0;
 
     public float getDefenseLevel() {
         return defenseLevel;
@@ -18,6 +19,8 @@ public class Defense {
     void remove ()
     {
         nonworker +=30;
+        numberOfDefense -=30;
+
     }
     void upgrade ()
     {

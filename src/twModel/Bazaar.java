@@ -37,8 +37,9 @@ public class Bazaar extends Block {
                 createBazar[i] = 1;
       }
    }
-   public void remove ()
+   public void remove (int bazaarId)
    {
+       createBazar[bazaarId] = 0;
 
    }
    public void upgrade()

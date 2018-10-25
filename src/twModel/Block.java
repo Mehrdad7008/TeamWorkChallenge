@@ -65,10 +65,12 @@ public class Block {
         blockCreate[i] = 1 ;
         capacityOfblocks[i] = 5;
         setBlockId(blockId+1);
+        mojodi-=1000;
     }
     public void remove(int blockId)
     {
         blockCreate[blockId-1] = 0;
+        mojodi+=500;
 
     }
     public void upgrade(int blockId)
@@ -76,6 +78,7 @@ public class Block {
 
         capacityOfblocks[blockId]+=5;
         levelOfblocks[blockId]++;
+        mojodi-=math.abs(500,levelOfblocks[blockId])
 
     }
     //    public int cost()
@@ -84,6 +87,7 @@ public class Block {
 //    }
     public void attack()
     {
+
 
     }
 
