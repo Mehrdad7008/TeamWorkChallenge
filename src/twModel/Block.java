@@ -1,5 +1,7 @@
 package twModel;
 
+import java.util.ArrayList;
+
 public class Block {
     protected int blockId = 0 ;
     protected int level = 1;
@@ -10,7 +12,7 @@ public class Block {
     private int capacity = 5;
     private int[] capacityOfblocks = new int[15] ;
     private int[] levelOfblocks = new int[15];
-    private Home[] homes = new Home[20];
+    private ArrayList<Home> homes = new ArrayList<>();
 
     public Block(int blockId) {
         this.blockId = blockId;
@@ -86,6 +88,7 @@ public class Block {
 //    {
 //
 //    }
+
     public void attack()
     {
 
@@ -96,9 +99,14 @@ public class Block {
     {
 
     }
-    public void score()
+    public float score()
     {
+        float sum=0;
+        for (Home home : homes) {
 
+            sum+=home.homePoint();
+        }
+        return sum;
     }
     public void grill()
     {

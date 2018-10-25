@@ -61,7 +61,7 @@ public class Bazaar extends Block {
    {
 //        numberOfworker+=20;
        costs.setFirstCosts((getLevel()+1)*5000);
-
+        setBazaarLvl(bazaarLvl+0.2);
 
    }
    public void cost()

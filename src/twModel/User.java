@@ -32,4 +32,12 @@ public class User {
         this.myBlock.add((i+1)%2);
         return this.myBlock.getBlockId();
     }
+    public float score()
+    {
+        float sum=0;
+        for (Block block : blocks) {
+            sum+=block.score();
+        }
+        return sum;
+    }
 }

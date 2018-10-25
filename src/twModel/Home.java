@@ -1,4 +1,4 @@
-
+package twModel;
 public class Home extends Block {
 	private Floor[] floor = new Floor[100000];
 	private int point;
@@ -7,8 +7,12 @@ public class Home extends Block {
 	private int cost = 3000 ;
 	private int[] home = new int[15] ;
 	protected int[] homeCreate = new int[15];
-    
-	public void setHomeId(int homeId) {
+
+    public Home(int blockId) {
+        super(blockId);
+    }
+
+    public void setHomeId(int homeId) {
         this.homeId = homeId;
     }
 	public float floorPoints() {
