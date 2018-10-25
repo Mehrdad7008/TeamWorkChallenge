@@ -5,7 +5,7 @@ public class Floor {
 	private int c=3;
 	
 	public float floorPoint() {
-		return c + unitPoints() + 2*unit[0].personPoints();
+		return c + unitPoints() + unit[0].personPoints();
 	}
 		
 		public float unitPoints() {

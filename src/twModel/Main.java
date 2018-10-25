@@ -1,5 +1,6 @@
 package twModel;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -7,34 +8,45 @@ public class Main {
         Scanner read = new Scanner(System.in);
         String[] input = new String[100000];
         int counter = 0;
-        User[] competitor=new User[2];
-        int change =0;
-        while (input[counter].toLowerCase() != "yield") {
+        User[] competitor = new User[2];
+        input[0] = read.next();
+        int change = 0;
+        while (!input[counter].toLowerCase().equals("yield")) {
             int temp = counter;
-            switch (input[counter].toLowerCase()) {
+            switch (input[temp].toLowerCase()) {
                 case "add": {
                     temp++;
                     input[temp] = read.next();
-                    switch (input[counter].toLowerCase()) {
+                    switch (input[temp].toLowerCase()) {
                         case "block": {
-                            competitor[change%2].block.add();
-
+                            Block myBlock=new Block();
+                            myBlock.add();
+                            ArrayList<Block>
+                            competitor[change % 2].maxBlockId(myBlock);
+                            System.out.println(competitor[change % 2]);
+                            break;
                         }
                         case "home": {
-
+                            break;
                         }
                         case "army": {
-                            System.out.println("jhhhhhh");
+                            break;
                         }
                         case "defense": {
-
+                            break;
                         }
                         case "bazaar": {
-
+                            temp++;
+                            competitor[change % 2].block.blockId = read.nextInt();
+                            System.out.println(competitor[change % 2].block.getBlockId());
+                            break;
                         }
-                        default:
+                        default: {
                             System.out.println("not possible");
+                            break;
+                        }
                     }
+                    break;
                 }
                 case "remove": {
                     break;
@@ -43,6 +55,14 @@ public class Main {
                     break;
                 }
                 case "see": {
+                    temp++;
+                    input[temp] = read.next();
+                    if (input[temp].toLowerCase() == "grills")
+                        System.out.println(30000);
+                    else if (input[temp].toLowerCase() == "score")
+                        System.out.println(200);
+                    else
+                        System.out.println("not possible");
                     break;
                 }
                 case "done": {
@@ -56,7 +76,10 @@ public class Main {
                     break;
                 }
 
+
             }
+            temp++;
+            counter = temp;
         }
     }
 }

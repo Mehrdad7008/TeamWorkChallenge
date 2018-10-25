@@ -6,13 +6,11 @@ public class Person {
     Bazaar bazaar =  new Bazaar();
     private int a = 1 ;
 
-    Bazaar bazaar = new Bazaar();
-
     public float personPoint() {
         return a * satisficationDeveloper();
     }
     public float satisficationDeveloper() {
-        this.satisfication *= baza;
+        this.satisfication *= 1;
         return this.satisfication;
     }
     public String job() {
