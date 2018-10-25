@@ -22,7 +22,7 @@ public class Main {
 
                         }
                         case "army": {
-
+                            System.out.println("jhhhhhh");
                         }
                         case "defense": {
 
