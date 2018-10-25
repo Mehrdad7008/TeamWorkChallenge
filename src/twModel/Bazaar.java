@@ -1,5 +1,3 @@
-package twModel;
-
 public class Bazaar {
     private int bazaarId ;
     Person[] person;
