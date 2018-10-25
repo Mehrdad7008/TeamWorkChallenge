@@ -10,6 +10,7 @@ public class Block {
     private int capacity = 5;
     private int[] capacityOfblocks = new int[15];
     private int[] levelOfblocks = new int[15];
+    private Home[] homes = new Home[20];
 
     public Block(int blockId) {
         this.blockId = blockId;
