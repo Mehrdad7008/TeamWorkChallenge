@@ -69,8 +69,6 @@ public class Main {
                             input[temp] = read.next();
                             if (Integer.parseInt(input[temp]) == userBuiltBlocks) {
                                 competitor[change % 2].i = 1;
-                            } else {
-
                             }
                             break;
                         }
