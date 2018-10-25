@@ -6,11 +6,14 @@ public class Unit {
 	private int b=2;
 	
 	public float unitPoint() {
-		float point;
+		return b + personPoints();
+	}
+	public float personPoints() {
 		int i;
+		float pointOfPersons = 0 ;
 		for( i = 0 ; i < person.length ; i++ ) {
-			point += Person.parseFloat(person[i]);
+			pointOfPersons += person[i].personPoint();
 		}
-		return b + point;
+		return pointOfPersons;
 	}
 }
