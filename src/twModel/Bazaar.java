@@ -1,4 +1,4 @@
-import twModel.Block;
+package twModel;
 
 public class Bazaar extends Block {
     private int bazaarId ;
@@ -32,8 +32,6 @@ public class Bazaar extends Block {
             if (createBazar[i]==0)
                 createBazar[i] = 1;
       }
-      bazaar
-
    }
    public void remove ()
    {
