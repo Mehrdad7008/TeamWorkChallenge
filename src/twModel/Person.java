@@ -1,3 +1,5 @@
+package twModel;
+
 public class Person {
     private float satisfication = 1 ;
     private String work;
