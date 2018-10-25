@@ -1,4 +1,4 @@
-
+package twModel;
 public class Floor {
 	private Unit[] unit = new Unit[100000];
 	private int point;
@@ -23,8 +23,8 @@ public class Floor {
 			}
 			return pointOfUnits;
 		}
-		public setFloor(int n) {
-			unit[n] = 
-		}
+//		public setFloor(int n) {
+//			unit[n] =
+//		}
 }
 	

@@ -13,6 +13,7 @@ public class Main {
         competitor[1] = new User();
         input[0] = read.next();
         int change = 0;
+        int userBuiltBlocks = 0;
         while (!input[counter].toLowerCase().equals("yield")) {
             int temp = counter;
             switch (input[temp].toLowerCase()) {
@@ -21,7 +22,56 @@ public class Main {
                     input[temp] = read.next();
                     switch (input[temp].toLowerCase()) {
                         case "block": {
-                            competitor[change%2].userId();
+                            userBuiltBlocks = competitor[change % 2].userBlockId();
+                            competitor[change % 2].i = 0;
+                            System.out.println(userBuiltBlocks);
+                            break;
+                        }
+                        case "home": {
+                            temp++;
+                            input[temp] = read.next();
+                            if (competitor[change % 2].getMyHomeId() <= userBuiltBlocks)
+                                System.out.println(competitor[change % 2].getMyHomeId());
+                            else
+                                System.out.println("not possible");
+                            temp++;
+                            break;
+                        }
+                        case "army": {
+                            break;
+                        }
+                        case "defense": {
+                            break;
+                        }
+                        case "bazaar": {
+                            temp++;
+                            input[temp] = read.next();
+                            competitor[change % 2].setMyBazaar(Integer.parseInt(input[temp]));
+                            if (competitor[change % 2].getMyBazaarId() <= userBuiltBlocks)
+                                System.out.println(competitor[change % 2].getMyBazaarId());
+                            else
+                                System.out.println("not possible");
+                            break;
+                        }
+                        default: {
+                            System.out.println("not possible");
+                            break;
+                        }
+                    }
+                    break;
+                }
+                case "remove": {
+                    temp++;
+                    input[temp] = read.next();
+                    switch (input[temp].toLowerCase()) {
+                        case "block": {
+                            temp++;
+                            input[temp] = read.next();
+                            if (Integer.parseInt(input[temp]) == userBuiltBlocks) {
+                                competitor[change % 2].i = 1;
+                            } else {
+
+                            }
                             break;
                         }
                         case "home": {
@@ -42,10 +92,6 @@ public class Main {
                             break;
                         }
                     }
-                    break;
-                }
-                case "remove": {
-
                     break;
                 }
                 case "upgrade": {
@@ -77,7 +123,7 @@ public class Main {
             }
             temp++;
             counter = temp;
-            input[counter]=read.next();
+            input[counter] = read.next();
         }
     }
 

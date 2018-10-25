@@ -49,7 +49,7 @@ public class Bazaar extends Block {
    }
    public void upgrade()
    {
-        numberOfworker+=20;
+//        numberOfworker+=20;
        costs.setFirstCosts((getLevel()+1)*5000);
 
    }
