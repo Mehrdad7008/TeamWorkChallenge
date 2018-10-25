@@ -9,7 +9,7 @@ public class Army
     public float getArmyLevel() {
         return armyLevel;
     }
-    0
+
 
     public void setArmyLevel(float armyLevel) {
         this.armyLevel = armyLevel;

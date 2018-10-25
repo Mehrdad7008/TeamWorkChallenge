@@ -1,16 +1,25 @@
-
+package twModel;
 public class Home extends Block {
+
 	private Floor[] floor = new Floor[100000];
 	private int point;
 	private float e=10;
 	private int homeId = 0 ;
 	private int cost = 3000 ;
+<<<<<<< Updated upstream
 	private int[] home = new int[15] ;
 	protected int[] homeCreate = new int[15];
     
 	public void setHomeId(int homeId) {
         this.homeId = homeId;
     }
+=======
+
+	public Home(int blockId) {
+		super(blockId);
+	}
+
+>>>>>>> Stashed changes
 	public float floorPoints() {
 		float pointOfFloors = 0 ;
 		int i ;
@@ -48,6 +57,7 @@ public class Home extends Block {
 		
 	}
 	public void add() {
+<<<<<<< Updated upstream
 		int i ;
 	    for ( i = 0 ; i<15 ; i++)
 	        {
@@ -57,6 +67,10 @@ public class Home extends Block {
 	        homeCreate[i] = 1 ;
 	        setHomeId(homeId+1);
 	    
+=======
+
+		
+>>>>>>> Stashed changes
 	}
 	public void upgrade() {
 		
