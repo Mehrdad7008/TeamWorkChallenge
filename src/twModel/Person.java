@@ -3,7 +3,7 @@ package twModel;
 public class Person {
     private float satisfication = 1 ;
     private String work;
-    Bazaar bazaar =  new Bazaar();
+    Bazaar bazaar =  new Bazaar(0);
     private int a = 1 ;
 
     public float personPoint() {

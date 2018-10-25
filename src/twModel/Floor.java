@@ -1,4 +1,4 @@
-
+package twModel;
 public class Floor {
 	private Unit[] unit = new Unit[100000];
 	private int point;

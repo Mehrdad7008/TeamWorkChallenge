@@ -11,6 +11,10 @@ public class Block {
     private int[] capacityOfblocks = new int[15] ;
     private int[] levelOfblocks = new int[15];
 
+    public Block(int blockId) {
+        this.blockId = blockId;
+    }
+
     public void setBlockId(int blockId) {
         this.blockId = blockId;
     }

@@ -9,6 +9,8 @@ public class Main {
         String[] input = new String[100000];
         int counter = 0;
         User[] competitor = new User[2];
+        competitor[0] = new User();
+        competitor[1] = new User();
         input[0] = read.next();
         int change = 0;
         while (!input[counter].toLowerCase().equals("yield")) {
@@ -19,11 +21,7 @@ public class Main {
                     input[temp] = read.next();
                     switch (input[temp].toLowerCase()) {
                         case "block": {
-                            Block myBlock=new Block();
-                            myBlock.add();
-                            ArrayList<Block>
-                            competitor[change % 2].maxBlockId(myBlock);
-                            System.out.println(competitor[change % 2]);
+                            competitor[change%2].userId();
                             break;
                         }
                         case "home": {
@@ -37,8 +35,6 @@ public class Main {
                         }
                         case "bazaar": {
                             temp++;
-                            competitor[change % 2].block.blockId = read.nextInt();
-                            System.out.println(competitor[change % 2].block.getBlockId());
                             break;
                         }
                         default: {
@@ -80,6 +76,7 @@ public class Main {
             }
             temp++;
             counter = temp;
+            input[counter]=read.next();
         }
     }
 }

@@ -8,6 +8,10 @@ public class Bazaar extends Block {
    private int bazaarLvl;
    private int[] createBazar = new int[20];
 
+    public Bazaar(int blockId) {
+        super(blockId);
+    }
+
     public int getBazaarId() {
         return bazaarId;
     }
